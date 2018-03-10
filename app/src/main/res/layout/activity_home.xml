@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_small"
+    android:orientation="vertical"
+    tools:context="com.health.medicare.emedicare.HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to E-Medicare App"
+        android:textSize="@dimen/header_textSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/introduction"
+        android:textSize="@dimen/header_textSize"
+        android:layout_marginTop="@dimen/margin_default"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_large"
+        android:src="@drawable/app_main_icon"/>
+    <!--  <Button
+          android:id="@+id/order_medicines_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginTop="@dimen/margin_extra_large"
+          android:background="@color/colorRed"
+          android:drawableLeft="@drawable/capsule"
+          android:drawableTint="@color/drawable_color"
+          android:text="@string/order_medicines"
+          android:textAllCaps="false"
+          android:textColor="@color/ui_white_digital"
+          android:textSize="@dimen/header_textSize" />
+
+      <Button
+          android:id="@+id/doctors_button"
+          style="@style/ButtonStyle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginTop="@dimen/margin_extra_large"
+          android:background="@color/colorAccent"
+          android:drawableLeft="@drawable/doctor"
+          android:drawableTint="@color/drawable_color"
+          android:text="@string/doctors" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/btn_order_med"
+            style="?android:attr/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorAccent">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableStart="@drawable/capsule"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/order_medicines"
+                android:textAllCaps="false"
+                android:textColor="@color/ui_white_digital"
+
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_doctors_framelayout"
+            style="?android:attr/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@color/buttonBackgroundColor3">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableStart="@drawable/doctor"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/doctors"
+                android:textAllCaps="false"
+                android:textColor="@color/ui_white_digital"
+
+                />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

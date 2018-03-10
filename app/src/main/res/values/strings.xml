@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">E-Medicare</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="alphanumbericWithSpecialCharacters">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$_abcdefghijklmnopqrstuvwxyz</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register_now">Register Now</string>
+    <string name="qty">Qty</string>
+    <string name="minus">Minus</string>
+    <string name="items_total">Items Total</string>
+    <string name="check_out">Continue</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="place_order">Place Order</string>
+    <string name="order_medicines">Order Medicines</string>
+    <string name="doctors">Doctors</string>
+    <string name="call">Call</string>
+    <string name="cart">Cart</string>
+    <string name="items_added">Items Added</string>
+    <string name="cancel">Cancel</string>
+    <string name="success_message">Your Order has been successfully placed. Thanks for your order.It will be delivered soon. Payment mode is only cash on delivery.</string>
+    <string name="introduction">E-Medicare is helpful to Order Medicines or consult doctors.You can directly call doctor from the app itself.</string>
+</resources>

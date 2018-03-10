@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRRParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorWhiteBackground">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/medicineDetailsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        />
+
+    <View
+        android:id="@+id/divider2"
+        style="@style/DividerHorizontal"
+        android:layout_above="@+id/bottom_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:paddingTop="@dimen/padding_small">
+
+        <LinearLayout
+            android:id="@+id/items_total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/items_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/items_total"
+                android:textSize="@dimen/header_textSize" />
+
+            <TextView
+                android:id="@+id/items_total_price_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/colorRed"
+                tools:text="$213.63"
+                android:textStyle="bold"
+                android:textSize="@dimen/header_textSize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continue_button"
+            style="@style/ButtonStyle"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/check_out" />
+
+    </LinearLayout>
+</RelativeLayout>

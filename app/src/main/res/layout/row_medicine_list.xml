@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteBackground">
+
+    <RelativeLayout
+        android:id="@+id/llTopParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:paddingTop="@dimen/padding_small">
+
+        <RelativeLayout
+            android:id="@+id/medicine_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/doctor_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/medicine"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/medicine_textSize"
+                android:textStyle="bold"
+                tools:text="Crocin" />
+
+            <ImageButton
+                android:id="@+id/add_to_cart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_extra_large"
+                android:src="@drawable/cart_img"
+                android:layout_toRightOf="@+id/doctor_name_textview"
+                android:background="@android:color/transparent"
+                android:text="Add to Cart"
+
+
+                android:textSize="@dimen/header_textSize" />
+
+
+            <!--              <TextView
+                              android:id="@+id/expiry_details_textview"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginStart="@dimen/margin_small"
+                              android:layout_below="@id/add_to_cart_button"
+                              android:padding="@dimen/padding_small"
+                              tools:text="Expiry Date"
+                              android:textSize="@dimen/header_textSize" />-->
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/doctor_description_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medicine_details_layout"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/medicine_expiry_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textColor="@color/colorHighlighter"
+                android:textSize="@dimen/header_textSize"
+                tools:text="Expiry Date:12 Feb 2019" />
+
+            <TextView
+                android:id="@+id/medicine_price_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:maxLines="2"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/header_textSize"
+                android:textStyle="bold"
+                tools:text="Rs 12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llQtyItemNotesPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctor_description_price_layout"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/experienceDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/qty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/decreaseQtyBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:background="@null"
+                        android:descendantFocusability="blocksDescendants"
+                        android:padding="@dimen/padding_small"
+                        android:src="@drawable/ic_minus"
+                        android:text="@string/minus"
+                        android:textColor="@color/contentColor"
+
+
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/medicine_quantity_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.5"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/contentColor"
+                        android:textSize="@dimen/header_textSize" />
+
+                    <ImageButton
+                        android:id="@+id/increaseQtyBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:background="@null"
+                        android:descendantFocusability="blocksDescendants"
+                        android:padding="@dimen/padding_small"
+                        android:src="@drawable/ic_plus"
+                        android:text="Plus"
+
+
+                        android:textColor="@color/contentColor"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/medicine_final_price_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="@dimen/contentSize"
+                tools:text="Rs.80" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerHorizontal"
+        android:layout_below="@+id/llTopParent" />
+
+</RelativeLayout>

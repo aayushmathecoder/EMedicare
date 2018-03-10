@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="divider">#AEAFB2</color>
+    <color name="ui_white_digital">#FFFFFF</color>
+ <!--   <color name="contentColor">#999999</color>-->
+    <color name="contentColor">#333333</color>
+    <color name="colorWhiteBackground">#FFFFFF</color>
+    <color name="colorHighlighter">#FF4081</color>
+    <color name="colorRed">#D12630</color>
+    <color name="drawable_color">#000000</color>
+    <color name="buttonBackgroundColor">#990000</color>
+    <color name="buttonBackgroundColor3">#000000</color>
+    <color name="buttonBackgroundColor2">#ff6666</color>
+
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_small"
+    android:orientation="vertical"
+    tools:context="com.health.medicare.emedicare.LogInActivity">
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/square_border_with_curve_edge"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:drawableTint="@color/drawable_color"
+        android:drawableLeft="@drawable/new_user"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:padding="@dimen/padding_view" />
+
+    <EditText
+        android:id="@+id/mobile_number_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:background="@drawable/square_border_with_curve_edge"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:drawableTint="@color/drawable_color"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="@dimen/padding_view" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/square_border_with_curve_edge"
+        android:maxLength="50"
+        android:digits="@string/alphanumbericWithSpecialCharacters"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawableTint="@color/drawable_color"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:maxLines="1"
+        android:padding="@dimen/padding_view" />
+
+    <EditText
+        android:id="@+id/address_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/square_border_with_curve_edge"
+        android:hint="@string/address"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/notebook"
+        android:maxLines="1"
+        android:drawableTint="@color/drawable_color"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="@dimen/drawable_padding"
+
+        android:padding="@dimen/padding_view" />
+    <EditText
+        android:id="@+id/password_edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/square_border_with_curve_edge"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:maxLength="22"
+        android:maxLines="1"
+        android:drawableTint="@color/drawable_color"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:padding="@dimen/padding_view" />
+
+    <Button
+        android:id="@+id/register_now_button"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@color/buttonBackgroundColor"
+        android:text="@string/register_now" />
+</LinearLayout>
